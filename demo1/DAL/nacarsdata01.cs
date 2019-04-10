@@ -14,6 +14,21 @@ namespace demo1.DAL
     
     public partial class nacarsdata01
     {
+        public nacarsdata01(int nindex, string nregister, string nflightnum, double? nlat, double? nlong, int? naltitude, double? ntemperature, int? nwinddirection, double? nwindspeed, DateTime? ndatetime, string nsrcreport)
+        {
+            this.nindex = nindex;
+            this.nregister = nregister;
+            this.nflightnum = nflightnum;
+            this.nlat = nlat;
+            this.nlong = nlong;
+            this.naltitude = naltitude;
+            this.ntemperature = ntemperature;
+            this.nwinddirection = nwinddirection;
+            this.nwindspeed = nwindspeed;
+            this.ndatetime = ndatetime;
+            this.nsrcreport = nsrcreport;
+        }
+
         public int nindex { get; set; }
         public string nregister { get; set; }
         public string nflightnum { get; set; }
