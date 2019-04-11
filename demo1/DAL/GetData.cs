@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace demo1.DAL
 {
-    class GetData
+    public class GetData
     {
         public List<nacarsdata01> selectAll()
         {

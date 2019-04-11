@@ -20,20 +20,9 @@ namespace demo1
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox1_DragEnter(object sender, DragEventArgs e)
-        {
-            string path = ((Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();
-            textBox1.Text = path;
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            this.dataGridView1.DataSource = loadFile.Load(this.textBox1.Text);
+            this.dataGridView1.DataSource = loadFile.Load();
         }
     }
 }

@@ -29,6 +29,9 @@ namespace demo1.DAL
             this.nsrcreport = nsrcreport;
         }
 
+        public nacarsdata01()
+        { }
+
         public int nindex { get; set; }
         public string nregister { get; set; }
         public string nflightnum { get; set; }
