@@ -62,34 +62,124 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\LoadFile.cs" />
-    <Compile Include="DAL\DataDAL.Context.cs">
+    <Compile Include="DAL\AcarsData.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataDAL.Context.tt</DependentUpon>
+      <DependentUpon>AcarsData.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DAL\DataDAL.cs">
+    <Compile Include="DAL\AcarsData.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataDAL.tt</DependentUpon>
+      <DependentUpon>AcarsData.tt</DependentUpon>
     </Compile>
-    <Compile Include="DAL\DataDAL.Designer.cs">
+    <Compile Include="DAL\AcarsData.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataDAL.edmx</DependentUpon>
+      <DependentUpon>AcarsData.edmx</DependentUpon>
     </Compile>
     <Compile Include="DAL\GetData.cs" />
     <Compile Include="DAL\nacarsdata01.cs">
-      <DependentUpon>DataDAL.tt</DependentUpon>
+      <DependentUpon>AcarsData.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="DAL\nacarsdata02.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata03.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata04.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata05.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata06.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata07.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata08.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata09.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata10.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata11.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata12.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata13.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata14.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata15.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata16.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata17.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata18.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata19.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata20.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata21.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata22.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata23.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata24.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata25.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata26.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata27.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata28.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata29.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata30.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\nacarsdata31.cs">
+      <DependentUpon>AcarsData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="UI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -101,12 +191,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="DAL\DataDAL.edmx">
+    <EntityDeploy Include="DAL\AcarsData.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DataDAL.Designer.cs</LastGenOutput>
+      <LastGenOutput>AcarsData.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DAL\DataDAL.edmx.diagram">
-      <DependentUpon>DataDAL.edmx</DependentUpon>
+    <None Include="DAL\AcarsData.edmx.diagram">
+      <DependentUpon>AcarsData.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -122,17 +212,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="DAL\DataDAL.Context.tt">
+    <Content Include="DAL\AcarsData.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DataDAL.edmx</DependentUpon>
-      <LastGenOutput>DataDAL.Context.cs</LastGenOutput>
+      <DependentUpon>AcarsData.edmx</DependentUpon>
+      <LastGenOutput>AcarsData.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DAL\DataDAL.tt">
+    <Content Include="DAL\AcarsData.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DataDAL.edmx</DependentUpon>
-      <LastGenOutput>DataDAL.cs</LastGenOutput>
+      <DependentUpon>AcarsData.edmx</DependentUpon>
+      <LastGenOutput>AcarsData.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

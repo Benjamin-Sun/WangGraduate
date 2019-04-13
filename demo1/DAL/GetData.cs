@@ -14,9 +14,10 @@ namespace demo1.DAL
 
             using (var context = new acarsEntities())
             {
-                var na = context.nacarsdata01;
-
-                var query = na.Select(nar => nar);       //循环添加到实体类
+                var query = context.nacarsdata01
+                    .Select(nar => nar);       
+                
+                //循环添加到实体类
                 foreach (var q in query)
                 {
                     db.Add(new nacarsdata01(
@@ -29,10 +30,9 @@ namespace demo1.DAL
                         q.ntemperature,
                         q.nwinddirection,
                         q.nwindspeed,
-                        q.ndatetime, q.nsrcreport));
+                        q.ndatetime));
                 }
 
-                Console.WriteLine(db);
                 return db;
             }
         }

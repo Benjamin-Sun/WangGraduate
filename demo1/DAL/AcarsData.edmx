@@ -1,0 +1,1627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="acarsModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="nacarsdata01">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata02">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata03">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata04">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata05">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata06">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata07">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata08">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata09">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata10">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata11">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata12">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata13">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata14">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata15">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata16">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata17">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata18">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata19">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata20">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata21">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata22">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata23">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata24">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata25">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata26">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata27">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata28">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata29">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata30">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="nacarsdata31">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nregister" Type="varchar" MaxLength="12" />
+          <Property Name="nflightnum" Type="varchar" MaxLength="12" />
+          <Property Name="nlat" Type="double" />
+          <Property Name="nlong" Type="double" />
+          <Property Name="naltitude" Type="int" />
+          <Property Name="ntemperature" Type="double" />
+          <Property Name="nwinddirection" Type="int" />
+          <Property Name="nwindspeed" Type="double" />
+          <Property Name="ndatetime" Type="datetime" Precision="0" />
+          <Property Name="nsrcreport" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityContainer Name="acarsModelStoreContainer">
+          <EntitySet Name="nacarsdata01" EntityType="Self.nacarsdata01" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata02" EntityType="Self.nacarsdata02" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata03" EntityType="Self.nacarsdata03" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata04" EntityType="Self.nacarsdata04" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata05" EntityType="Self.nacarsdata05" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata06" EntityType="Self.nacarsdata06" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata07" EntityType="Self.nacarsdata07" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata08" EntityType="Self.nacarsdata08" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata09" EntityType="Self.nacarsdata09" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata10" EntityType="Self.nacarsdata10" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata11" EntityType="Self.nacarsdata11" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata12" EntityType="Self.nacarsdata12" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata13" EntityType="Self.nacarsdata13" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata14" EntityType="Self.nacarsdata14" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata15" EntityType="Self.nacarsdata15" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata16" EntityType="Self.nacarsdata16" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata17" EntityType="Self.nacarsdata17" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata18" EntityType="Self.nacarsdata18" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata19" EntityType="Self.nacarsdata19" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata20" EntityType="Self.nacarsdata20" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata21" EntityType="Self.nacarsdata21" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata22" EntityType="Self.nacarsdata22" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata23" EntityType="Self.nacarsdata23" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata24" EntityType="Self.nacarsdata24" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata25" EntityType="Self.nacarsdata25" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata26" EntityType="Self.nacarsdata26" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata27" EntityType="Self.nacarsdata27" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata28" EntityType="Self.nacarsdata28" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata29" EntityType="Self.nacarsdata29" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata30" EntityType="Self.nacarsdata30" Schema="acars" store:Type="Tables" />
+          <EntitySet Name="nacarsdata31" EntityType="Self.nacarsdata31" Schema="acars" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="acarsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="nacarsdata01">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata02">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata03">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata04">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata05">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata06">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata07">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata08">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata09">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata10">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata11">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata12">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata13">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata14">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata15">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata16">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata17">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata18">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata19">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata20">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata21">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata22">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata23">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata24">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata25">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata26">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata27">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata28">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata29">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata30">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="nacarsdata31">
+          <Key>
+            <PropertyRef Name="nindex" />
+          </Key>
+          <Property Name="nindex" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nregister" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nflightnum" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nlat" Type="Double" />
+          <Property Name="nlong" Type="Double" />
+          <Property Name="naltitude" Type="Int32" />
+          <Property Name="ntemperature" Type="Double" />
+          <Property Name="nwinddirection" Type="Int32" />
+          <Property Name="nwindspeed" Type="Double" />
+          <Property Name="ndatetime" Type="DateTime" />
+          <Property Name="nsrcreport" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="acarsEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="nacarsdata01" EntityType="Self.nacarsdata01" />
+          <EntitySet Name="nacarsdata02" EntityType="Self.nacarsdata02" />
+          <EntitySet Name="nacarsdata03" EntityType="Self.nacarsdata03" />
+          <EntitySet Name="nacarsdata04" EntityType="Self.nacarsdata04" />
+          <EntitySet Name="nacarsdata05" EntityType="Self.nacarsdata05" />
+          <EntitySet Name="nacarsdata06" EntityType="Self.nacarsdata06" />
+          <EntitySet Name="nacarsdata07" EntityType="Self.nacarsdata07" />
+          <EntitySet Name="nacarsdata08" EntityType="Self.nacarsdata08" />
+          <EntitySet Name="nacarsdata09" EntityType="Self.nacarsdata09" />
+          <EntitySet Name="nacarsdata10" EntityType="Self.nacarsdata10" />
+          <EntitySet Name="nacarsdata11" EntityType="Self.nacarsdata11" />
+          <EntitySet Name="nacarsdata12" EntityType="Self.nacarsdata12" />
+          <EntitySet Name="nacarsdata13" EntityType="Self.nacarsdata13" />
+          <EntitySet Name="nacarsdata14" EntityType="Self.nacarsdata14" />
+          <EntitySet Name="nacarsdata15" EntityType="Self.nacarsdata15" />
+          <EntitySet Name="nacarsdata16" EntityType="Self.nacarsdata16" />
+          <EntitySet Name="nacarsdata17" EntityType="Self.nacarsdata17" />
+          <EntitySet Name="nacarsdata18" EntityType="Self.nacarsdata18" />
+          <EntitySet Name="nacarsdata19" EntityType="Self.nacarsdata19" />
+          <EntitySet Name="nacarsdata20" EntityType="Self.nacarsdata20" />
+          <EntitySet Name="nacarsdata21" EntityType="Self.nacarsdata21" />
+          <EntitySet Name="nacarsdata22" EntityType="Self.nacarsdata22" />
+          <EntitySet Name="nacarsdata23" EntityType="Self.nacarsdata23" />
+          <EntitySet Name="nacarsdata24" EntityType="Self.nacarsdata24" />
+          <EntitySet Name="nacarsdata25" EntityType="Self.nacarsdata25" />
+          <EntitySet Name="nacarsdata26" EntityType="Self.nacarsdata26" />
+          <EntitySet Name="nacarsdata27" EntityType="Self.nacarsdata27" />
+          <EntitySet Name="nacarsdata28" EntityType="Self.nacarsdata28" />
+          <EntitySet Name="nacarsdata29" EntityType="Self.nacarsdata29" />
+          <EntitySet Name="nacarsdata30" EntityType="Self.nacarsdata30" />
+          <EntitySet Name="nacarsdata31" EntityType="Self.nacarsdata31" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="acarsModelStoreContainer" CdmEntityContainer="acarsEntities1">
+          <EntitySetMapping Name="nacarsdata01">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata01">
+              <MappingFragment StoreEntitySet="nacarsdata01">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata02">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata02">
+              <MappingFragment StoreEntitySet="nacarsdata02">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata03">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata03">
+              <MappingFragment StoreEntitySet="nacarsdata03">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata04">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata04">
+              <MappingFragment StoreEntitySet="nacarsdata04">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata05">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata05">
+              <MappingFragment StoreEntitySet="nacarsdata05">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata06">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata06">
+              <MappingFragment StoreEntitySet="nacarsdata06">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata07">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata07">
+              <MappingFragment StoreEntitySet="nacarsdata07">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata08">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata08">
+              <MappingFragment StoreEntitySet="nacarsdata08">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata09">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata09">
+              <MappingFragment StoreEntitySet="nacarsdata09">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata10">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata10">
+              <MappingFragment StoreEntitySet="nacarsdata10">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata11">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata11">
+              <MappingFragment StoreEntitySet="nacarsdata11">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata12">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata12">
+              <MappingFragment StoreEntitySet="nacarsdata12">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata13">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata13">
+              <MappingFragment StoreEntitySet="nacarsdata13">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata14">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata14">
+              <MappingFragment StoreEntitySet="nacarsdata14">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata15">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata15">
+              <MappingFragment StoreEntitySet="nacarsdata15">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata16">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata16">
+              <MappingFragment StoreEntitySet="nacarsdata16">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata17">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata17">
+              <MappingFragment StoreEntitySet="nacarsdata17">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata18">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata18">
+              <MappingFragment StoreEntitySet="nacarsdata18">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata19">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata19">
+              <MappingFragment StoreEntitySet="nacarsdata19">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata20">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata20">
+              <MappingFragment StoreEntitySet="nacarsdata20">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata21">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata21">
+              <MappingFragment StoreEntitySet="nacarsdata21">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata22">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata22">
+              <MappingFragment StoreEntitySet="nacarsdata22">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata23">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata23">
+              <MappingFragment StoreEntitySet="nacarsdata23">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata24">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata24">
+              <MappingFragment StoreEntitySet="nacarsdata24">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata25">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata25">
+              <MappingFragment StoreEntitySet="nacarsdata25">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata26">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata26">
+              <MappingFragment StoreEntitySet="nacarsdata26">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata27">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata27">
+              <MappingFragment StoreEntitySet="nacarsdata27">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata28">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata28">
+              <MappingFragment StoreEntitySet="nacarsdata28">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata29">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata29">
+              <MappingFragment StoreEntitySet="nacarsdata29">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata30">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata30">
+              <MappingFragment StoreEntitySet="nacarsdata30">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="nacarsdata31">
+            <EntityTypeMapping TypeName="acarsModel.nacarsdata31">
+              <MappingFragment StoreEntitySet="nacarsdata31">
+                <ScalarProperty Name="nindex" ColumnName="nindex" />
+                <ScalarProperty Name="nregister" ColumnName="nregister" />
+                <ScalarProperty Name="nflightnum" ColumnName="nflightnum" />
+                <ScalarProperty Name="nlat" ColumnName="nlat" />
+                <ScalarProperty Name="nlong" ColumnName="nlong" />
+                <ScalarProperty Name="naltitude" ColumnName="naltitude" />
+                <ScalarProperty Name="ntemperature" ColumnName="ntemperature" />
+                <ScalarProperty Name="nwinddirection" ColumnName="nwinddirection" />
+                <ScalarProperty Name="nwindspeed" ColumnName="nwindspeed" />
+                <ScalarProperty Name="ndatetime" ColumnName="ndatetime" />
+                <ScalarProperty Name="nsrcreport" ColumnName="nsrcreport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
