@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using demo1.BLL;
-using demo1.UI;
 
 namespace demo1
 {
@@ -42,7 +41,7 @@ namespace demo1
         {
             int[] x = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int[] y = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            this.pictureBox1.Image = new DrawXY().draw(x, y);
+            this.pictureBox1.Image = deal.getXY(x, y);
         }
     }
 }

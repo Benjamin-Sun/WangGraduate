@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace demo1.UI
+namespace demo1.BLL
 {
     class DrawXY
     {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,11 @@ namespace demo1.BLL
     public class Deal
     {
         private DAL.Data data = new Data();
+
+        public Bitmap getXY(int[] xbuf, int[] ybuf)
+        {
+            return new DrawXY().draw(xbuf, ybuf);
+        }
 
         public List<nacarsdata01> gatAll()
         {
