@@ -171,6 +171,7 @@
     <Compile Include="DAL\nacarsdata31.cs">
       <DependentUpon>AcarsData.tt</DependentUpon>
     </Compile>
+    <Compile Include="UI\DrawXY.cs" />
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

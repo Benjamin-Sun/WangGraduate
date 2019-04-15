@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using demo1.BLL;
+using demo1.UI;
 
 namespace demo1
 {
@@ -35,6 +36,13 @@ namespace demo1
             {
                 this.dataGridView1.DataSource = deal.getByNalt(this.comboBox1.Text);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int[] x = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] y = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            this.pictureBox1.Image = new DrawXY().draw(x, y);
         }
     }
 }

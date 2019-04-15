@@ -18,7 +18,6 @@ namespace demo1.DAL
                 var query = context.nacarsdata01
                     .Select(nar => nar);
                 
-                //循环添加到实体类
                 foreach (var q in query)
                 {
                     nacarsdata01 nacarsdata = new nacarsdata01();
