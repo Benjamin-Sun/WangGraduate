@@ -17,19 +17,28 @@ namespace demo1.BLL
             return data.selectAll();
         }
 
-        public List<nacarsdata01> getByNalt(int hight)
+        public List<nacarsdata01> getByNalt(string hight)
         {
             List<nacarsdata01> list = new List<nacarsdata01>();
             switch (hight)
             {
-                case 30000:
-                    list = data.selectByNalt(27500, 32500);
+                case "FL100":
+                    list = data.selectByNalt(9000, 11000);
                     break;
-                case 35000:
-                    list = data.selectByNalt(32500, 37500);
+                case "FL180":
+                    list = data.selectByNalt(17000, 19000);
                     break;
-                case 40000:
-                    list = data.selectByNalt(37500, 42500);
+                case "FL240":
+                    list = data.selectByNalt(23000, 25000);
+                    break;
+                case "FL300":
+                    list = data.selectByNalt(29000, 31000);
+                    break;
+                case "FL340":
+                    list = data.selectByNalt(33000, 35000);
+                    break;
+                case "FL390":
+                    list = data.selectByNalt(38000, 40000);
                     break;
                 default:
                     list = null;

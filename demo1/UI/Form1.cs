@@ -33,7 +33,7 @@ namespace demo1
             }
             else
             {
-                this.dataGridView1.DataSource = deal.getByNalt(Convert.ToInt32(this.comboBox1.Text));
+                this.dataGridView1.DataSource = deal.getByNalt(this.comboBox1.Text);
             }
         }
     }
