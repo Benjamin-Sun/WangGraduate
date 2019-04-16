@@ -96,7 +96,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(36, 327);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1246, 470);
+            this.pictureBox1.Size = new System.Drawing.Size(1190, 678);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
@@ -114,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1315, 830);
+            this.ClientSize = new System.Drawing.Size(1315, 1017);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox1);
