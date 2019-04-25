@@ -234,6 +234,64 @@
       <DependentUpon>AcarsData.edmx</DependentUpon>
       <LastGenOutput>AcarsData.cs</LastGenOutput>
     </Content>
+    <Content Include="Icons\10.png" />
+    <Content Include="Icons\100.png" />
+    <Content Include="Icons\105.png" />
+    <Content Include="Icons\110.png" />
+    <Content Include="Icons\115.png" />
+    <Content Include="Icons\120.png" />
+    <Content Include="Icons\125.png" />
+    <Content Include="Icons\130.png" />
+    <Content Include="Icons\135.png" />
+    <Content Include="Icons\140.png" />
+    <Content Include="Icons\145.png" />
+    <Content Include="Icons\15.png" />
+    <Content Include="Icons\150.png" />
+    <Content Include="Icons\155.png" />
+    <Content Include="Icons\160.png" />
+    <Content Include="Icons\165.png" />
+    <Content Include="Icons\170.png" />
+    <Content Include="Icons\175.png" />
+    <Content Include="Icons\180.png" />
+    <Content Include="Icons\185.png" />
+    <Content Include="Icons\190.png" />
+    <Content Include="Icons\195.png" />
+    <Content Include="Icons\20.png" />
+    <Content Include="Icons\200.png" />
+    <Content Include="Icons\205.png" />
+    <Content Include="Icons\210.png" />
+    <Content Include="Icons\215.png" />
+    <Content Include="Icons\220.png" />
+    <Content Include="Icons\225.png" />
+    <Content Include="Icons\230.png" />
+    <Content Include="Icons\235.png" />
+    <Content Include="Icons\240.png" />
+    <Content Include="Icons\245.png" />
+    <Content Include="Icons\25.png" />
+    <Content Include="Icons\250.png" />
+    <Content Include="Icons\255.png" />
+    <Content Include="Icons\260.png" />
+    <Content Include="Icons\265.png" />
+    <Content Include="Icons\270.png" />
+    <Content Include="Icons\275.png" />
+    <Content Include="Icons\280.png" />
+    <Content Include="Icons\285.png" />
+    <Content Include="Icons\30.png" />
+    <Content Include="Icons\35.png" />
+    <Content Include="Icons\40.png" />
+    <Content Include="Icons\45.png" />
+    <Content Include="Icons\5.png" />
+    <Content Include="Icons\50.png" />
+    <Content Include="Icons\55.png" />
+    <Content Include="Icons\60.png" />
+    <Content Include="Icons\65.png" />
+    <Content Include="Icons\70.png" />
+    <Content Include="Icons\75.png" />
+    <Content Include="Icons\80.png" />
+    <Content Include="Icons\85.png" />
+    <Content Include="Icons\90.png" />
+    <Content Include="Icons\95.png" />
+    <Content Include="Icons\map.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
