@@ -13,9 +13,9 @@ namespace demo1.BLL
     {
         private DAL.Data data = new Data();
 
-        public Bitmap getXY(int[] xbuf, int[] ybuf)
+        public Bitmap getXY()
         {
-            return new DrawXY().draw(xbuf, ybuf);
+            return new DrawXY().draw();
         }
 
         public List<nacarsdata01> gatAll()

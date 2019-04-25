@@ -50,6 +50,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -172,6 +173,12 @@
       <DependentUpon>AcarsData.tt</DependentUpon>
     </Compile>
     <Compile Include="BLL\DrawXY.cs" />
+    <Compile Include="UI\CoordinateSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CoordinateSystem.Designer.cs">
+      <DependentUpon>CoordinateSystem.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +187,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UI\CoordinateSystem.resx">
+      <DependentUpon>CoordinateSystem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
