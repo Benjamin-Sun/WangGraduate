@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\Deal.cs" />
+    <Compile Include="BLL\DrawPoints.cs" />
     <Compile Include="DAL\AcarsData.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

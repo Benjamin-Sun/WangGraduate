@@ -12,6 +12,9 @@ namespace demo1.UI
 {
     public partial class CoordinateSystem : Form
     {
+
+        private BLL.Deal deal = new BLL.Deal();
+
         public CoordinateSystem()
         {
             InitializeComponent();
@@ -28,9 +31,17 @@ namespace demo1.UI
             this.pictureBox2.Parent = pictureBox1;
             pictureBox1.BackColor = Color.Transparent;
 
-            this.pictureBox1.Image = new BLL.Deal().getXY();
+            //通过设置pictureBox2为pictureBox3的父类，来实现box3对于box2的透明
+            //this.pictureBox3.Parent = pictureBox2;
+            //pictureBox2.BackColor = Color.Transparent;
+
+            //设置box1图片
+            this.pictureBox1.Image = deal.getXY();
             //Console.WriteLine(Application.StartupPath + "\\Icons\\map.png");
+            //设置box2图片
             this.pictureBox2.Image = Image.FromFile(Application.StartupPath + "\\Icons\\map.png");
+            //设置box3图片
+            this.pictureBox3.Image = deal.getPoints();
         }
     }
 }

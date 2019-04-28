@@ -23,6 +23,13 @@ namespace demo1.BLL
             return data.selectAll();
         }
 
+        public Bitmap getPoints()
+        {
+            List<nacarsdata01> list = this.gatAll();
+
+            return new DrawPoints().drawPoints(list);
+        }
+
         public List<nacarsdata01> getByNalt(string hight)
         {
             List<nacarsdata01> list = new List<nacarsdata01>();
