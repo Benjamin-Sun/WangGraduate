@@ -23,11 +23,10 @@ namespace demo1.BLL
             {
                 PointF p = new PointF(Convert.ToInt32(list[i].nlong * 20), Convert.ToInt32(list[i].nlat * 20));
                 //g.DrawLine(new Pen(Color.Black, 2), p, p);
-                Console.WriteLine((int)Math.Round((Double)list[i].nlong, 1) * 20 + 
-                    (int)Math.Round((Double)list[i].nlat, 1) * 20);
+                Console.WriteLine((((int)Math.Round((Double)list[i].nlong, 2)) * 20).ToString() + " " + (((int)Math.Round((Double)list[i].nlat, 2)) * 20).ToString());
 
-                image.SetPixel((int)Math.Round((Double)list[i].nlong, 1) * 20,
-                    (int)Math.Round((Double)list[i].nlat, 1) * 20, Color.Red);
+                //image.SetPixel((int)Math.Round((Double)list[i].nlong, 1) * 20,
+                //    (int)Math.Round((Double)list[i].nlat, 1) * 20, Color.Red);
             }
 
             return image;
