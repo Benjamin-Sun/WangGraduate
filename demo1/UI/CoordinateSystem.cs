@@ -32,8 +32,8 @@ namespace demo1.UI
             pictureBox1.BackColor = Color.Transparent;
 
             //通过设置pictureBox2为pictureBox3的父类，来实现box3对于box2的透明
-            //this.pictureBox3.Parent = pictureBox2;
-            //pictureBox2.BackColor = Color.Transparent;
+            this.pictureBox3.Parent = pictureBox2;
+            pictureBox2.BackColor = Color.Transparent;
 
             //设置box1图片
             this.pictureBox1.Image = deal.getXY();

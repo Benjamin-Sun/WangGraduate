@@ -10,6 +10,8 @@ namespace demo1.BLL
 {
     /**
      * 遍历查出的列表绘制坐标点 
+     * 经度：-70
+     * 纬度：-10
      **/
 
     class DrawPoints
@@ -21,12 +23,11 @@ namespace demo1.BLL
 
             for (int i = 0; i < list.Count; i++)
             {
-                PointF p = new PointF(Convert.ToInt32(list[i].nlong * 20), Convert.ToInt32(list[i].nlat * 20));
-                //g.DrawLine(new Pen(Color.Black, 2), p, p);
-                Console.WriteLine((((int)Math.Round((Double)list[i].nlong, 2)) * 20).ToString() + " " + (((int)Math.Round((Double)list[i].nlat, 2)) * 20).ToString());
+                //PointF p = new PointF((int)((list[i].nlong - 70) * 20), (int)((list[i].nlat - 10) * 20));
+                Console.WriteLine((int)((list[i].nlong - 70) * 20) + " " + (int)((list[i].nlat - 10) * 20));
 
-                //image.SetPixel((int)Math.Round((Double)list[i].nlong, 1) * 20,
-                //    (int)Math.Round((Double)list[i].nlat, 1) * 20, Color.Red);
+                //g.DrawLine(new Pen(Color.Red, 2), p, p);
+                image.SetPixel((int)(list[i].nlong - 70) * 20, (int)(list[i].nlat - 10) * 20, Color.Red);
             }
 
             return image;
