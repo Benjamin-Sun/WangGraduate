@@ -40,9 +40,7 @@ namespace demo1
 
         private void button3_Click(object sender, EventArgs e)
         {
-
-            //this.pictureBox1.Image = deal.getXY();
-            CoordinateSystem coordinateSystem = new CoordinateSystem();
+            CoordinateSystem coordinateSystem = new CoordinateSystem(this.comboBox1.Text);
             coordinateSystem.Show();
         }
     }

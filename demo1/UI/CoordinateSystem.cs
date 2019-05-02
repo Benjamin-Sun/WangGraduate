@@ -15,9 +15,10 @@ namespace demo1.UI
 
         private BLL.Deal deal = new BLL.Deal();
 
-        public CoordinateSystem()
+        public CoordinateSystem(String text)
         {
             InitializeComponent();
+            this.label1.Text = text;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -41,7 +42,12 @@ namespace demo1.UI
             //设置box2图片
             this.pictureBox2.Image = Image.FromFile(Application.StartupPath + "\\Icons\\map.png");
             //设置box3图片
-            this.pictureBox3.Image = deal.getPoints();
+            this.pictureBox3.Image = deal.getPoints(label1.Text);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
