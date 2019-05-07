@@ -39,7 +39,6 @@ namespace demo1.BLL
                 box.Size = new Size(10, 10);
                 box.TabIndex = 3;
                 box.TabStop = false;
-
             }
 
             return image;
