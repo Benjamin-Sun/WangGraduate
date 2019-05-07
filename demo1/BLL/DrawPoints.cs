@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace demo1.BLL
 {
@@ -19,15 +20,26 @@ namespace demo1.BLL
         public Bitmap drawPoints(List<nacarsdata01> list)
         {
             Bitmap image = new Bitmap(1402, 1002);
-            //Graphics g = Graphics.FromImage(image);
+            int nlong;
+            int nlat;
+
 
             for (int i = 0; i < list.Count; i++)
             {
-                //PointF p = new PointF((int)((list[i].nlong - 70) * 20), (int)((list[i].nlat - 10) * 20));
-                Console.WriteLine((int)((list[i].nlong - 70) * 20) + " " + (int)((list[i].nlat - 10) * 20));
+                //测试使用
+                //Console.WriteLine((int)((list[i].nlong - 70) * 20) + " " + (int)((list[i].nlat - 10) * 20));
 
-                //g.DrawLine(new Pen(Color.Red, 2), p, p);
-                image.SetPixel((int)(list[i].nlong - 70) * 20, (int)(list[i].nlat - 10) * 20, Color.Red);
+                nlong = (int)(list[i].nlong - 70) * 20;
+                nlat = (int)(list[i].nlat - 10) * 20;
+                image.SetPixel(nlong, nlat, Color.Red);
+
+                PictureBox box = new PictureBox();
+                box.Location = new Point(nlong, nlat);
+                box.Name = "pictureBox4";
+                box.Size = new Size(10, 10);
+                box.TabIndex = 3;
+                box.TabStop = false;
+
             }
 
             return image;

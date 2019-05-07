@@ -25,7 +25,7 @@ namespace demo1.BLL
 
         public Bitmap getPoints(String hight)
         {
-            if (hight == null)
+            if (hight == null || hight.Equals(""))
             {
                 List<nacarsdata01> list = this.gatAll();
                 return new DrawPoints().drawPoints(list);
