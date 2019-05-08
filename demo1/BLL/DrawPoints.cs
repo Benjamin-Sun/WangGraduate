@@ -45,6 +45,7 @@ namespace demo1.BLL
             int nlat;
             int windDir;
             int windSpe;
+            double temp;
             List<PictureBox> picBoxList = new List<PictureBox>();
 
             for (int i = 0; i < list.Count; i++)
@@ -53,15 +54,16 @@ namespace demo1.BLL
                 nlat = (int)(list[i].nlat - 10) * 20;
                 windDir = (int)list[i].nwinddirection;
                 windSpe = (int)list[i].nwindspeed;
+                temp = (double)list[i].ntemperature;
 
                 PictureBox box = new PictureBox();
                 box.Location = new Point(nlong, nlat);
                 box.Name = "pictureBox" + (4 + i).ToString();
                 box.Size = new Size(20, 20);
-                box.Image = Image.FromFile(Application.StartupPath + "\\Icons\\206.png");
+                box.Image = Image.FromFile(Application.StartupPath + "\\Images\\205.png");
                 box.SizeMode = PictureBoxSizeMode.StretchImage;
                 //box.Image = getRotateImage
-                //    (Image.FromFile(Application.StartupPath + "\\Icons\\" + getWindSpe(windSpe) + ".png"),
+                //    (Image.FromFile(Application.StartupPath + "\\Images\\" + getWindSpe(windSpe) + ".png"),
                 //    getRotateAngle(windDir));
 
                 picBoxList.Add(box);

@@ -40,7 +40,7 @@ namespace demo1.UI
             this.pictureBox1.Image = deal.getXY();
             //Console.WriteLine(Application.StartupPath + "\\Icons\\map.png");
             //设置box2图片
-            this.pictureBox2.Image = Image.FromFile(Application.StartupPath + "\\Icons\\map.png");
+            this.pictureBox2.Image = Image.FromFile(Application.StartupPath + "\\Images\\map.png");
             //设置box3图片
             this.pictureBox3.Image = deal.getPoints(label1.Text);
 
