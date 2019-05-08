@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using demo1.DAL;
 
 namespace demo1.BLL
@@ -23,7 +24,7 @@ namespace demo1.BLL
             return data.selectAll();
         }
 
-        public Bitmap getPoints(String hight)
+        public Bitmap getPoints(string hight)
         {
             if (hight == null || hight.Equals(""))
             {
@@ -36,6 +37,20 @@ namespace demo1.BLL
                 return new DrawPoints().drawPoints(list);
             }
             
+        }
+
+        public List<PictureBox> getPictures(string hight)
+        {
+            if (hight == null || hight.Equals(""))
+            {
+                List<nacarsdata01> list = this.gatAll();
+                return new DrawPoints().getPictures(list);
+            }
+            else
+            {
+                List<nacarsdata01> list = this.getByNalt(hight);
+                return new DrawPoints().getPictures(list);
+            }
         }
 
         public List<nacarsdata01> getByNalt(string hight)
