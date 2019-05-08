@@ -38,14 +38,11 @@ namespace demo1.UI
 
             //设置box1图片
             this.pictureBox1.Image = deal.getXY();
-            //this.pictureBox1.BackColor = Color.Green;
             //Console.WriteLine(Application.StartupPath + "\\Icons\\map.png");
             //设置box2图片
             this.pictureBox2.Image = Image.FromFile(Application.StartupPath + "\\Icons\\map.png");
-            //this.pictureBox2.BackColor = Color.Black;
             //设置box3图片
             this.pictureBox3.Image = deal.getPoints(label1.Text);
-            //this.pictureBox3.BackColor = Color.Red;
 
             //将DrawPoint()中的PictureBox列表循环添加到窗体中
             List<PictureBox> picBoxList = deal.getPictures(label1.Text);
@@ -53,10 +50,7 @@ namespace demo1.UI
             {
                 this.Controls.Add(picBoxList[i]);
                 picBoxList[i].BringToFront();
-                //Console.WriteLine(picBoxList[i].Name + " " + picBoxList[i].Location);
             }
-            //Console.WriteLine(this.Controls.Count);
-
            
         }
 
