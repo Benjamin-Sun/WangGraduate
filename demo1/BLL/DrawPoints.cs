@@ -62,6 +62,7 @@ namespace demo1.BLL
                 box.Image = getRotateImage
                     (Image.FromFile(Application.StartupPath + "\\Icons\\" + getWindSpe(windSpe) + ".png"),
                     getRotateAngle(windDir));
+                box.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 picBoxList.Add(box);
             }
