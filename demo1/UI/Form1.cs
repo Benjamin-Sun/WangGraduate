@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using demo1.BLL;
+using demo1.DAL;
 using demo1.UI;
 
 namespace demo1
@@ -23,7 +24,8 @@ namespace demo1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.dataGridView1.DataSource = deal.gatAll();
+            //this.dataGridView1.DataSource = deal.gatAll();
+            //dataGridView1.DataSource = new Data().selectAllTest<nacarsdata01>();
         }
 
         private void button2_Click(object sender, EventArgs e)

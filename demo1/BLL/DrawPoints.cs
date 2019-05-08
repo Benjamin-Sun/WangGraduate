@@ -58,10 +58,11 @@ namespace demo1.BLL
                 box.Location = new Point(nlong, nlat);
                 box.Name = "pictureBox" + (4 + i).ToString();
                 box.Size = new Size(20, 20);
-                //box.Image = Image.FromFile(Application.StartupPath + "\\Icons\\286.png");
-                box.Image = getRotateImage
-                    (Image.FromFile(Application.StartupPath + "\\Icons\\" + getWindSpe(windSpe) + ".png"),
-                    getRotateAngle(windDir));
+                box.Image = Image.FromFile(Application.StartupPath + "\\Icons\\206.png");
+                box.SizeMode = PictureBoxSizeMode.StretchImage;
+                //box.Image = getRotateImage
+                //    (Image.FromFile(Application.StartupPath + "\\Icons\\" + getWindSpe(windSpe) + ".png"),
+                //    getRotateAngle(windDir));
 
                 picBoxList.Add(box);
             }
