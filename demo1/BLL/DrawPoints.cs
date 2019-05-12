@@ -45,7 +45,7 @@ namespace demo1.BLL
             int nlat;
             int windDir;
             int windSpe;
-            //Int32 tmp;
+            int? tmp;
             List<PictureBox> picBoxList = new List<PictureBox>();
 
             for (int i = 0; i < list.Count; i++)
@@ -54,11 +54,11 @@ namespace demo1.BLL
                 nlat = (int)(list[i].nlat - 10) * 20;
                 windDir = (int)list[i].nwinddirection;
                 windSpe = (int)list[i].nwindspeed;
-                //tmp = (Int32)list[i].ntemperature;
-                //if (tmp.Equals("") || tmp.Equals(null))
-                //{
-                //    tmp = 0;
-                //}
+                tmp = (int?)list[i].ntemperature;
+                if (tmp.Equals("") || tmp.Equals(null))
+                {
+                    tmp = 0;
+                }
 
                 PictureBox box = new PictureBox();
                 box.Location = new Point(nlong, nlat);
@@ -66,7 +66,7 @@ namespace demo1.BLL
                 box.Size = new Size(20, 20);
                 box.Image = getRotateImage
                     (Image.FromFile(Application.StartupPath + "\\Icons\\" + getWindSpe(windSpe) + ".png"),
-                    getRotateAngle(windDir));
+                    getRotateAngle(windDir), tmp);
                 box.SizeMode = PictureBoxSizeMode.StretchImage;
 
                 picBoxList.Add(box);
@@ -95,7 +95,7 @@ namespace demo1.BLL
             return (angle + 5) / 10 * 10;
         }
 
-        private Image getRotateImage(Image img, int angle)
+        private Image getRotateImage(Image img, int angle, int? tmp)
         {
             angle = angle % 360;//弧度转换
             double radian = angle * Math.PI / 180.0;
@@ -110,8 +110,8 @@ namespace demo1.BLL
             Image dsImage = new Bitmap(W, H, img.PixelFormat);
             using (System.Drawing.Graphics g = System.Drawing.Graphics.FromImage(dsImage))
             {
-                //Font font = new Font("Arial", 9, FontStyle.Regular);
-                //g.DrawString(tmp.ToString(), font, Brushes.Black, 2, 2);
+                Font font = new Font("Arial", 9, FontStyle.Regular);
+                g.DrawString(tmp.ToString(), font, Brushes.Black, 4, 4);
                 g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bilinear;
                 g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 //计算偏移量
