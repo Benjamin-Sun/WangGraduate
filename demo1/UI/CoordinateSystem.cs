@@ -51,10 +51,19 @@ namespace demo1.UI
                 this.Controls.Add(picBoxList[i]);
                 picBoxList[i].BringToFront();
             }
+
+            //左下角标识
+            this.label3.Text = label1.Text;
+            this.label5.Text = DateTime.Now.ToShortDateString();
            
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

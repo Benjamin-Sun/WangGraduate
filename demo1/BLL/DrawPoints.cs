@@ -45,6 +45,7 @@ namespace demo1.BLL
             int nlat;
             int windDir;
             int windSpe;
+            //Int32 tmp;
             List<PictureBox> picBoxList = new List<PictureBox>();
 
             for (int i = 0; i < list.Count; i++)
@@ -53,12 +54,16 @@ namespace demo1.BLL
                 nlat = (int)(list[i].nlat - 10) * 20;
                 windDir = (int)list[i].nwinddirection;
                 windSpe = (int)list[i].nwindspeed;
+                //tmp = (Int32)list[i].ntemperature;
+                //if (tmp.Equals("") || tmp.Equals(null))
+                //{
+                //    tmp = 0;
+                //}
 
                 PictureBox box = new PictureBox();
                 box.Location = new Point(nlong, nlat);
                 box.Name = "pictureBox" + (4 + i).ToString();
                 box.Size = new Size(20, 20);
-                //box.Image = Image.FromFile(Application.StartupPath + "\\Icons\\286.png");
                 box.Image = getRotateImage
                     (Image.FromFile(Application.StartupPath + "\\Icons\\" + getWindSpe(windSpe) + ".png"),
                     getRotateAngle(windDir));
@@ -73,7 +78,15 @@ namespace demo1.BLL
         //计算图片路径
         private string getWindSpe(int num)
         {
-            return (Math.Floor((num + 2.5) / 5) * 5).ToString();
+            int spe = (int)Math.Floor((num + 2.5) / 5) * 5;
+            if (spe == 0)
+            {
+                return 5.ToString();
+            }
+            else
+            {
+                return spe.ToString();
+            }
         }
 
         //计算旋转角度
@@ -97,6 +110,8 @@ namespace demo1.BLL
             Image dsImage = new Bitmap(W, H, img.PixelFormat);
             using (System.Drawing.Graphics g = System.Drawing.Graphics.FromImage(dsImage))
             {
+                //Font font = new Font("Arial", 9, FontStyle.Regular);
+                //g.DrawString(tmp.ToString(), font, Brushes.Black, 2, 2);
                 g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bilinear;
                 g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 //计算偏移量
