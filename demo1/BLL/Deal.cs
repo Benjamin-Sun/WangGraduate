@@ -24,6 +24,7 @@ namespace demo1.BLL
             return data.selectAll();
         }
 
+        //画点
         public Bitmap getPoints(string hight)
         {
             if (hight == null || hight.Equals(""))
@@ -39,6 +40,7 @@ namespace demo1.BLL
             
         }
 
+        //取得
         public List<PictureBox> getPictures(string hight)
         {
             if (hight == null || hight.Equals(""))

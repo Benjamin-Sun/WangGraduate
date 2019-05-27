@@ -79,10 +79,11 @@ namespace demo1.DAL
             using (var context = new acarsEntities())
             {
                 List<nacarsdata01> db = new List<nacarsdata01>();
+                DateTime date1 = date.AddHours(t);
 
                 var query = context.nacarsdata01
                     .Where(nalt => nalt.naltitude >= min && nalt.naltitude < max 
-                    && nalt.ndatetime > date.AddHours(t) && nalt.ndatetime < date)
+                    && nalt.ndatetime > date1 && nalt.ndatetime < date)
                     .Select(nalt => nalt);
 
                 foreach (var q in query)

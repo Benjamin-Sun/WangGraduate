@@ -15,10 +15,11 @@ namespace demo1.UI
 
         private BLL.Deal deal = new BLL.Deal();
 
-        public CoordinateSystem(String text)
+        public CoordinateSystem(string text, string text2)
         {
             InitializeComponent();
             this.label1.Text = text;
+            this.label6.Text = text2;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

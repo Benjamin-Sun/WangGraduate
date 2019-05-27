@@ -28,23 +28,23 @@ namespace demo1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (this.comboBox2.Text == "")
+            {
+                MessageBox.Show("请选择时间范围");
+            }
             if (this.comboBox1.Text == "")
             {
                 MessageBox.Show("请选择高度范围");
-                if (this.comboBox2.Text == "")
-                {
-                    MessageBox.Show("请选择时间范围");
-                }
             }
             else
             {
-                this.dataGridView1.DataSource = deal.getByNalt(this.comboBox1.Text);
+                this.dataGridView1.DataSource = deal.getByNaltAndTime(this.comboBox1.Text, this.comboBox2.Text);
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            CoordinateSystem coordinateSystem = new CoordinateSystem(this.comboBox1.Text);
+            CoordinateSystem coordinateSystem = new CoordinateSystem(this.comboBox1.Text, this.comboBox2.Text);
             coordinateSystem.Show();
         }
     }
