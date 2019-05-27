@@ -82,5 +82,70 @@ namespace demo1.BLL
             }
             return list;
         }
+
+        public List<nacarsdata01> getByNaltAndTime(string hight, string time)
+        {
+            List<nacarsdata01> list = new List<nacarsdata01>();
+            int t;
+
+            switch (time)
+            {
+                case "6小时内":
+                    t = -6;
+                    switch (hight)
+                    {
+                        case "FL100":
+                            list = data.selectByNaltAndTime(9000, 11000, t);
+                            break;
+                        case "FL180":
+                            list = data.selectByNaltAndTime(17000, 19000, t);
+                            break;
+                        case "FL240":
+                            list = data.selectByNaltAndTime(23000, 25000, t);
+                            break;
+                        case "FL300":
+                            list = data.selectByNaltAndTime(29000, 31000, t);
+                            break;
+                        case "FL340":
+                            list = data.selectByNaltAndTime(33000, 35000, t);
+                            break;
+                        case "FL390":
+                            list = data.selectByNaltAndTime(38000, 40000, t);
+                            break;
+                        default:
+                            list = null;
+                            break;
+                    }
+                    break;
+                case "12小时内":
+                    t = -12;
+                    switch (hight)
+                    {
+                        case "FL100":
+                            list = data.selectByNaltAndTime(9000, 11000, t);
+                            break;
+                        case "FL180":
+                            list = data.selectByNaltAndTime(17000, 19000, t);
+                            break;
+                        case "FL240":
+                            list = data.selectByNaltAndTime(23000, 25000, t);
+                            break;
+                        case "FL300":
+                            list = data.selectByNaltAndTime(29000, 31000, t);
+                            break;
+                        case "FL340":
+                            list = data.selectByNaltAndTime(33000, 35000, t);
+                            break;
+                        case "FL390":
+                            list = data.selectByNaltAndTime(38000, 40000, t);
+                            break;
+                        default:
+                            list = null;
+                            break;
+                    }
+                    break;
+            }
+            return list;
+        }
     }
 }

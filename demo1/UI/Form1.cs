@@ -31,6 +31,10 @@ namespace demo1
             if (this.comboBox1.Text == "")
             {
                 MessageBox.Show("请选择高度范围");
+                if (this.comboBox2.Text == "")
+                {
+                    MessageBox.Show("请选择时间范围");
+                }
             }
             else
             {
