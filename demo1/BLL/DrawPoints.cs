@@ -107,10 +107,10 @@ namespace demo1.BLL
                 windDir = (int)list[i].nwinddirection;
                 windSpe = (int)list[i].nwindspeed;
                 tmp = (int?)list[i].ntemperature;
-                if (tmp.Equals("") || tmp.Equals(null))
-                {
-                    tmp = 0;
-                }
+                //if (tmp.Equals("") || tmp.Equals(null))
+                //{
+                //    tmp = 0;
+                //}
 
                 PictureBox box = new PictureBox();
                 box.Location = new Point(nlong, nlat);
@@ -163,8 +163,11 @@ namespace demo1.BLL
             Image dsImage = new Bitmap(W, H, img.PixelFormat);
             using (System.Drawing.Graphics g = System.Drawing.Graphics.FromImage(dsImage))
             {
-                Font font = new Font("Arial", 9, FontStyle.Regular);
-                g.DrawString(tmp.ToString(), font, Brushes.Black, 4, 4);
+                Font font = new Font("Arial", 10, FontStyle.Regular);
+                if (!tmp.Equals("") || !tmp.Equals(null))
+                {
+                    g.DrawString(tmp.ToString(), font, Brushes.Black, 4, 4);
+                }
                 g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bilinear;
                 g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 //计算偏移量
