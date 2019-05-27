@@ -40,7 +40,22 @@ namespace demo1.BLL
             
         }
 
-        //取得
+        public Bitmap getPointsT(string hight, string time)
+        {
+            if (hight == null || hight.Equals(""))
+            {
+                List<nacarsdata01> list = this.gatAll();
+                return new DrawPoints().drawPoints(list);
+            }
+            else
+            {
+                List<nacarsdata01> list = this.getByNaltAndTime(hight, time);
+                return new DrawPoints().drawPoints(list);
+            }
+
+        }
+
+        //取得风向
         public List<PictureBox> getPictures(string hight)
         {
             if (hight == null || hight.Equals(""))
@@ -51,6 +66,20 @@ namespace demo1.BLL
             else
             {
                 List<nacarsdata01> list = this.getByNalt(hight);
+                return new DrawPoints().getPictures(list);
+            }
+        }
+
+        public List<PictureBox> getPicturesT(string hight, string time)
+        {
+            if (hight == null || hight.Equals(""))
+            {
+                List<nacarsdata01> list = this.gatAll();
+                return new DrawPoints().getPictures(list);
+            }
+            else
+            {
+                List<nacarsdata01> list = this.getByNaltAndTime(hight, time);
                 return new DrawPoints().getPictures(list);
             }
         }

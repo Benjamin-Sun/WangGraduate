@@ -92,7 +92,7 @@ namespace demo1.BLL
         //计算旋转角度
         private int getRotateAngle(int angle)
         {
-            return (angle + 5) / 10 * 10;
+            return (angle - 90 + 5) / 10 * 10;
         }
 
         private Image getRotateImage(Image img, int angle, int? tmp)

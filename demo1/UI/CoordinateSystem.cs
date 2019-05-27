@@ -43,10 +43,12 @@ namespace demo1.UI
             //设置box2图片
             this.pictureBox2.Image = Image.FromFile(Application.StartupPath + "\\Icons\\map.png");
             //设置box3图片
-            this.pictureBox3.Image = deal.getPoints(label1.Text);
+            //this.pictureBox3.Image = deal.getPoints(label1.Text);
+            this.pictureBox3.Image = deal.getPointsT(label1.Text, label6.Text);
 
             //将DrawPoint()中的PictureBox列表循环添加到窗体中
-            List<PictureBox> picBoxList = deal.getPictures(label1.Text);
+            //List<PictureBox> picBoxList = deal.getPictures(label1.Text);
+            List<PictureBox> picBoxList = deal.getPicturesT(label1.Text, label6.Text);
             for (int i = 0; i < picBoxList.Count; i++)
             {
                 this.Controls.Add(picBoxList[i]);
