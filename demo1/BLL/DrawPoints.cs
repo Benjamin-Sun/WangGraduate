@@ -11,18 +11,18 @@ namespace demo1.BLL
 {
     /**
      * 遍历查出的列表绘制坐标点 
-     * 经度：-70
-     * 纬度：-10
+     * 经度：-70 改(100-130)
+     * 纬度：-10 改(20-50)
      **/
 
     class DrawPoints
     {
+        //画点
         public Bitmap drawPoints(List<nacarsdata01> list)
         {
             Bitmap image = new Bitmap(1402, 1002);
             int nlong;
             int nlat;
-
 
             for (int i = 0; i < list.Count; i++)
             {
@@ -32,13 +32,29 @@ namespace demo1.BLL
                 nlong = (int)(list[i].nlong - 70) * 20;
                 nlat = (int)(list[i].nlat - 10) * 20;
                 image.SetPixel(nlong, nlat, Color.Red);
-
-
             }
-
             return image;
         }
 
+        public Bitmap drawPoints2(List<nacarsdata01> list)
+        {
+            Bitmap image = new Bitmap(1202, 1202);
+            int nlong;
+            int nlat;
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                //测试使用
+                //Console.WriteLine((int)((list[i].nlong - 70) * 20) + " " + (int)((list[i].nlat - 10) * 20));
+
+                nlong = (int)(list[i].nlong - 100) * 40;
+                nlat = (int)(list[i].nlat - 20) * 40;
+                image.SetPixel(nlong, nlat, Color.Red);
+            }
+            return image;
+        }
+
+        //画风向标
         public List<PictureBox> getPictures(List<nacarsdata01> list)
         {
             int nlong;
@@ -75,6 +91,42 @@ namespace demo1.BLL
             return picBoxList;
         }
 
+        public List<PictureBox> getPictures2(List<nacarsdata01> list)
+        {
+            int nlong;
+            int nlat;
+            int windDir;
+            int windSpe;
+            int? tmp;
+            List<PictureBox> picBoxList = new List<PictureBox>();
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                nlong = (int)(list[i].nlong - 100) * 40;
+                nlat = (int)(list[i].nlat - 20) * 40;
+                windDir = (int)list[i].nwinddirection;
+                windSpe = (int)list[i].nwindspeed;
+                tmp = (int?)list[i].ntemperature;
+                if (tmp.Equals("") || tmp.Equals(null))
+                {
+                    tmp = 0;
+                }
+
+                PictureBox box = new PictureBox();
+                box.Location = new Point(nlong, nlat);
+                box.Name = "pictureBox" + (4 + i).ToString();
+                box.Size = new Size(40, 40);
+                box.Image = getRotateImage
+                    (Image.FromFile(Application.StartupPath + "\\Icons\\" + getWindSpe(windSpe) + ".png"),
+                    getRotateAngle(windDir), tmp);
+                box.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                picBoxList.Add(box);
+            }
+
+            return picBoxList;
+        }
+
         //计算图片路径
         private string getWindSpe(int num)
         {
@@ -95,6 +147,7 @@ namespace demo1.BLL
             return (angle - 90 + 5) / 10 * 10;
         }
 
+        //旋转图片
         private Image getRotateImage(Image img, int angle, int? tmp)
         {
             angle = angle % 360;//弧度转换

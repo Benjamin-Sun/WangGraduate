@@ -14,9 +14,15 @@ namespace demo1.BLL
     {
         private DAL.Data data = new Data();
 
+        //画坐标
         public Bitmap getXY()
         {
             return new DrawXY().draw();
+        }
+
+        public Bitmap getXY2()
+        {
+            return new DrawXY().draw2();
         }
 
         public List<nacarsdata01> gatAll()
@@ -45,12 +51,12 @@ namespace demo1.BLL
             if (hight == null || hight.Equals(""))
             {
                 List<nacarsdata01> list = this.gatAll();
-                return new DrawPoints().drawPoints(list);
+                return new DrawPoints().drawPoints2(list);
             }
             else
             {
                 List<nacarsdata01> list = this.getByNaltAndTime(hight, time);
-                return new DrawPoints().drawPoints(list);
+                return new DrawPoints().drawPoints2(list);
             }
 
         }
@@ -75,12 +81,12 @@ namespace demo1.BLL
             if (hight == null || hight.Equals(""))
             {
                 List<nacarsdata01> list = this.gatAll();
-                return new DrawPoints().getPictures(list);
+                return new DrawPoints().getPictures2(list);
             }
             else
             {
                 List<nacarsdata01> list = this.getByNaltAndTime(hight, time);
-                return new DrawPoints().getPictures(list);
+                return new DrawPoints().getPictures2(list);
             }
         }
 

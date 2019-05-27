@@ -38,8 +38,8 @@ namespace demo1.UI
             pictureBox2.BackColor = Color.Transparent;
 
             //设置box1图片
-            this.pictureBox1.Image = deal.getXY();
-            //Console.WriteLine(Application.StartupPath + "\\Icons\\map.png");
+            //this.pictureBox1.Image = deal.getXY();
+            this.pictureBox1.Image = deal.getXY2();
             //设置box2图片
             this.pictureBox2.Image = Image.FromFile(Application.StartupPath + "\\Icons\\map.png");
             //设置box3图片
