@@ -54,6 +54,25 @@ namespace demo1.BLL
             return image;
         }
 
+        //泛型画点
+        public Bitmap drawPoints2<T>(List<T> list) where T : acarsEntities
+        {
+            Bitmap image = new Bitmap(1202, 1202);
+            int nlong;
+            int nlat;
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                //测试使用
+                //Console.WriteLine((int)((list[i].nlong - 70) * 20) + " " + (int)((list[i].nlat - 10) * 20));
+
+                nlong = (int)(list[i].nlong - 100) * 40;
+                nlat = (int)(list[i].nlat - 20) * 40;
+                image.SetPixel(nlong, nlat, Color.Red);
+            }
+            return image;
+        }
+
         //画风向标
         public List<PictureBox> getPictures(List<nacarsdata01> list)
         {
@@ -111,6 +130,42 @@ namespace demo1.BLL
                 //{
                 //    tmp = 0;
                 //}
+
+                PictureBox box = new PictureBox();
+                box.Location = new Point(nlong, nlat);
+                box.Name = "pictureBox" + (4 + i).ToString();
+                box.Size = new Size(40, 40);
+                box.Image = getRotateImage
+                    (Image.FromFile(Application.StartupPath + "\\Icons\\" + getWindSpe(windSpe) + ".png"),
+                    getRotateAngle(windDir), tmp);
+                box.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                picBoxList.Add(box);
+            }
+
+            return picBoxList;
+        }
+
+        //泛型画风向标
+        public List<PictureBox> getPictures2<T>(List<T> list)where T : acarsEntities
+        {
+            int nlong;
+            int nlat;
+            int windDir;
+            int windSpe;
+            int? tmp;
+            List<PictureBox> picBoxList = new List<PictureBox>();
+            picBoxList.Add(new PictureBox());
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                nlong = (int)(list[i].nlong - 100) * 40;
+                nlat = (int)(list[i].nlat - 20) * 40;
+                windDir = (int)list[i].nwinddirection;
+                windSpe = (int)list[i].nwindspeed;
+                tmp = (int?)list[i].ntemperature;
+
+                Console.WriteLine("nlong:" + nlong + " " + "nlat:" + nlat + " " + "windDir:" + windDir + " " + "windSpe:" + windSpe + " " + "tmp:" + tmp + " ");
 
                 PictureBox box = new PictureBox();
                 box.Location = new Point(nlong, nlat);

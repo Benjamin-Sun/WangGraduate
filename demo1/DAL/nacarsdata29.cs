@@ -12,7 +12,7 @@ namespace demo1.DAL
     using System;
     using System.Collections.Generic;
     
-    public partial class nacarsdata29
+    public partial class nacarsdata29 : acarsEntities
     {
         public int nindex { get; set; }
         public string nregister { get; set; }

@@ -56,5 +56,10 @@ namespace demo1.DAL
         public virtual DbSet<nacarsdata29> nacarsdata29 { get; set; }
         public virtual DbSet<nacarsdata30> nacarsdata30 { get; set; }
         public virtual DbSet<nacarsdata31> nacarsdata31 { get; set; }
+        public int nlong { get; set; }
+        public int nlat { get; set; }
+        public int nwinddirection { get; set; }
+        public int nwindspeed { get; set; }
+        public int? ntemperature { get; set; }
     }
 }
