@@ -97,23 +97,53 @@ namespace demo1.BLL
             List<nacarsdata01> list = new List<nacarsdata01>();
             switch (hight)
             {
+                case "FL20":
+                    list = data.selectByNalt(1000, 2999);
+                    break;
+                case "FL40":
+                    list = data.selectByNalt(3000, 4999);
+                    break;
+                case "FL60":
+                    list = data.selectByNalt(5000, 6999);
+                    break;
+                case "FL80":
+                    list = data.selectByNalt(7000, 8999);
+                    break;
                 case "FL100":
-                    list = data.selectByNalt(9000, 11000);
+                    list = data.selectByNalt(9000, 10999);
+                    break;
+                case "FL120":
+                    list = data.selectByNalt(11000, 12999);
+                    break;
+                case "FL140":
+                    list = data.selectByNalt(13000, 14999);
+                    break;
+                case "FL160":
+                    list = data.selectByNalt(15000, 16999);
                     break;
                 case "FL180":
-                    list = data.selectByNalt(17000, 19000);
+                    list = data.selectByNalt(17000, 18999);
+                    break;
+                case "FL200":
+                    list = data.selectByNalt(19000, 20999);
+                    break;
+                case "FL220":
+                    list = data.selectByNalt(21000, 22999);
                     break;
                 case "FL240":
-                    list = data.selectByNalt(23000, 25000);
+                    list = data.selectByNalt(23000, 24999);
+                    break;
+                case "FL260":
+                    list = data.selectByNalt(25000, 26999);
+                    break;
+                case "FL280":
+                    list = data.selectByNalt(27000, 28999);
                     break;
                 case "FL300":
-                    list = data.selectByNalt(29000, 31000);
+                    list = data.selectByNalt(29000, 30999);
                     break;
-                case "FL340":
-                    list = data.selectByNalt(33000, 35000);
-                    break;
-                case "FL390":
-                    list = data.selectByNalt(38000, 40000);
+                case "FL320":
+                    list = data.selectByNalt(31000, 32999);
                     break;
                 default:
                     list = null;
@@ -133,23 +163,53 @@ namespace demo1.BLL
                     t = -6;
                     switch (hight)
                     {
+                        case "FL20":
+                            list = data.selectByNaltAndTime(1000, 2999, t);
+                            break;
+                        case "FL40":
+                            list = data.selectByNaltAndTime(3000, 4999, t);
+                            break;
+                        case "FL60":
+                            list = data.selectByNaltAndTime(5000, 6999, t);
+                            break;
+                        case "FL80":
+                            list = data.selectByNaltAndTime(7000, 8999, t);
+                            break;
                         case "FL100":
-                            list = data.selectByNaltAndTime(9000, 11000, t);
+                            list = data.selectByNaltAndTime(9000, 10999, t);
+                            break;
+                        case "FL120":
+                            list = data.selectByNaltAndTime(11000, 12999, t);
+                            break;
+                        case "FL140":
+                            list = data.selectByNaltAndTime(13000, 14999, t);
+                            break;
+                        case "FL160":
+                            list = data.selectByNaltAndTime(15000, 16999, t);
                             break;
                         case "FL180":
-                            list = data.selectByNaltAndTime(17000, 19000, t);
+                            list = data.selectByNaltAndTime(17000, 18999, t);
+                            break;
+                        case "FL200":
+                            list = data.selectByNaltAndTime(19000, 20999, t);
+                            break;
+                        case "FL220":
+                            list = data.selectByNaltAndTime(21000, 22999, t);
                             break;
                         case "FL240":
-                            list = data.selectByNaltAndTime(23000, 25000, t);
+                            list = data.selectByNaltAndTime(23000, 24999, t);
+                            break;
+                        case "FL260":
+                            list = data.selectByNaltAndTime(25000, 26999, t);
+                            break;
+                        case "FL280":
+                            list = data.selectByNaltAndTime(27000, 28999, t);
                             break;
                         case "FL300":
-                            list = data.selectByNaltAndTime(29000, 31000, t);
+                            list = data.selectByNaltAndTime(29000, 30999, t);
                             break;
-                        case "FL340":
-                            list = data.selectByNaltAndTime(33000, 35000, t);
-                            break;
-                        case "FL390":
-                            list = data.selectByNaltAndTime(38000, 40000, t);
+                        case "FL320":
+                            list = data.selectByNaltAndTime(31000, 32999, t);
                             break;
                         default:
                             list = null;
@@ -160,23 +220,53 @@ namespace demo1.BLL
                     t = -12;
                     switch (hight)
                     {
+                        case "FL20":
+                            list = data.selectByNaltAndTime(1000, 2999, t);
+                            break;
+                        case "FL40":
+                            list = data.selectByNaltAndTime(3000, 4999, t);
+                            break;
+                        case "FL60":
+                            list = data.selectByNaltAndTime(5000, 6999, t);
+                            break;
+                        case "FL80":
+                            list = data.selectByNaltAndTime(7000, 8999, t);
+                            break;
                         case "FL100":
-                            list = data.selectByNaltAndTime(9000, 11000, t);
+                            list = data.selectByNaltAndTime(9000, 10999, t);
+                            break;
+                        case "FL120":
+                            list = data.selectByNaltAndTime(11000, 12999, t);
+                            break;
+                        case "FL140":
+                            list = data.selectByNaltAndTime(13000, 14999, t);
+                            break;
+                        case "FL160":
+                            list = data.selectByNaltAndTime(15000, 16999, t);
                             break;
                         case "FL180":
-                            list = data.selectByNaltAndTime(17000, 19000, t);
+                            list = data.selectByNaltAndTime(17000, 18999, t);
+                            break;
+                        case "FL200":
+                            list = data.selectByNaltAndTime(19000, 20999, t);
+                            break;
+                        case "FL220":
+                            list = data.selectByNaltAndTime(21000, 22999, t);
                             break;
                         case "FL240":
-                            list = data.selectByNaltAndTime(23000, 25000, t);
+                            list = data.selectByNaltAndTime(23000, 24999, t);
+                            break;
+                        case "FL260":
+                            list = data.selectByNaltAndTime(25000, 26999, t);
+                            break;
+                        case "FL280":
+                            list = data.selectByNaltAndTime(27000, 28999, t);
                             break;
                         case "FL300":
-                            list = data.selectByNaltAndTime(29000, 31000, t);
+                            list = data.selectByNaltAndTime(29000, 30999, t);
                             break;
-                        case "FL340":
-                            list = data.selectByNaltAndTime(33000, 35000, t);
-                            break;
-                        case "FL390":
-                            list = data.selectByNaltAndTime(38000, 40000, t);
+                        case "FL320":
+                            list = data.selectByNaltAndTime(31000, 32999, t);
                             break;
                         default:
                             list = null;
@@ -199,23 +289,53 @@ namespace demo1.BLL
                     t = -6;
                     switch (hight)
                     {
+                        case "FL20":
+                            list = data.selectByNaltAndTime<T>(1000, 2999, t);
+                            break;
+                        case "FL40":
+                            list = data.selectByNaltAndTime<T>(3000, 4999, t);
+                            break;
+                        case "FL60":
+                            list = data.selectByNaltAndTime<T>(5000, 6999, t);
+                            break;
+                        case "FL80":
+                            list = data.selectByNaltAndTime<T>(7000, 8999, t);
+                            break;
                         case "FL100":
-                            list = data.selectByNaltAndTime<T>(9000, 11000, t);
+                            list = data.selectByNaltAndTime<T>(9000, 10999, t);
+                            break;
+                        case "FL120":
+                            list = data.selectByNaltAndTime<T>(11000, 12999, t);
+                            break;
+                        case "FL140":
+                            list = data.selectByNaltAndTime<T>(13000, 14999, t);
+                            break;
+                        case "FL160":
+                            list = data.selectByNaltAndTime<T>(15000, 16999, t);
                             break;
                         case "FL180":
-                            list = data.selectByNaltAndTime<T>(17000, 19000, t);
+                            list = data.selectByNaltAndTime<T>(17000, 18999, t);
+                            break;
+                        case "FL200":
+                            list = data.selectByNaltAndTime<T>(19000, 20999, t);
+                            break;
+                        case "FL220":
+                            list = data.selectByNaltAndTime<T>(21000, 22999, t);
                             break;
                         case "FL240":
-                            list = data.selectByNaltAndTime<T>(23000, 25000, t);
+                            list = data.selectByNaltAndTime<T>(23000, 24999, t);
+                            break;
+                        case "FL260":
+                            list = data.selectByNaltAndTime<T>(25000, 26999, t);
+                            break;
+                        case "FL280":
+                            list = data.selectByNaltAndTime<T>(27000, 28999, t);
                             break;
                         case "FL300":
-                            list = data.selectByNaltAndTime<T>(29000, 31000, t);
+                            list = data.selectByNaltAndTime<T>(29000, 30999, t);
                             break;
-                        case "FL340":
-                            list = data.selectByNaltAndTime<T>(33000, 35000, t);
-                            break;
-                        case "FL390":
-                            list = data.selectByNaltAndTime<T>(38000, 40000, t);
+                        case "FL320":
+                            list = data.selectByNaltAndTime<T>(31000, 32999, t);
                             break;
                         default:
                             list = null;
@@ -226,23 +346,53 @@ namespace demo1.BLL
                     t = -12;
                     switch (hight)
                     {
+                        case "FL20":
+                            list = data.selectByNaltAndTime<T>(1000, 2999, t);
+                            break;
+                        case "FL40":
+                            list = data.selectByNaltAndTime<T>(3000, 4999, t);
+                            break;
+                        case "FL60":
+                            list = data.selectByNaltAndTime<T>(5000, 6999, t);
+                            break;
+                        case "FL80":
+                            list = data.selectByNaltAndTime<T>(7000, 8999, t);
+                            break;
                         case "FL100":
-                            list = data.selectByNaltAndTime<T>(9000, 11000, t);
+                            list = data.selectByNaltAndTime<T>(9000, 10999, t);
+                            break;
+                        case "FL120":
+                            list = data.selectByNaltAndTime<T>(11000, 12999, t);
+                            break;
+                        case "FL140":
+                            list = data.selectByNaltAndTime<T>(13000, 14999, t);
+                            break;
+                        case "FL160":
+                            list = data.selectByNaltAndTime<T>(15000, 16999, t);
                             break;
                         case "FL180":
-                            list = data.selectByNaltAndTime<T>(17000, 19000, t);
+                            list = data.selectByNaltAndTime<T>(17000, 18999, t);
+                            break;
+                        case "FL200":
+                            list = data.selectByNaltAndTime<T>(19000, 20999, t);
+                            break;
+                        case "FL220":
+                            list = data.selectByNaltAndTime<T>(21000, 22999, t);
                             break;
                         case "FL240":
-                            list = data.selectByNaltAndTime<T>(23000, 25000, t);
+                            list = data.selectByNaltAndTime<T>(23000, 24999, t);
+                            break;
+                        case "FL260":
+                            list = data.selectByNaltAndTime<T>(25000, 26999, t);
+                            break;
+                        case "FL280":
+                            list = data.selectByNaltAndTime<T>(27000, 28999, t);
                             break;
                         case "FL300":
-                            list = data.selectByNaltAndTime<T>(29000, 31000, t);
+                            list = data.selectByNaltAndTime<T>(29000, 30999, t);
                             break;
-                        case "FL340":
-                            list = data.selectByNaltAndTime<T>(33000, 35000, t);
-                            break;
-                        case "FL390":
-                            list = data.selectByNaltAndTime<T>(38000, 40000, t);
+                        case "FL320":
+                            list = data.selectByNaltAndTime<T>(31000, 32999, t);
                             break;
                         default:
                             list = null;

@@ -81,12 +81,22 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "FL20",
+            "FL40",
+            "FL60",
+            "FL80",
             "FL100",
+            "FL120",
+            "FL140",
+            "FL160",
             "FL180",
+            "FL200",
+            "FL220",
             "FL240",
+            "FL260",
+            "FL280",
             "FL300",
-            "FL340",
-            "FL390"});
+            "FL320"});
             this.comboBox1.Location = new System.Drawing.Point(122, 285);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
