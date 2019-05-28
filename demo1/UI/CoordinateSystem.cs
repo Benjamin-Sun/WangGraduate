@@ -139,7 +139,7 @@ namespace demo1.UI
                     this.pictureBox3.Image = deal.getPointsT<nacarsdata28>(label1.Text, label6.Text);
                     break;
                 case 29:
-                    this.pictureBox3.Image = deal.getPointsT<nacarsdata02>(label1.Text, label6.Text);
+                    this.pictureBox3.Image = deal.getPointsT<nacarsdata29>(label1.Text, label6.Text);
                     break;
                 case 30:
                     this.pictureBox3.Image = deal.getPointsT<nacarsdata30>(label1.Text, label6.Text);
@@ -241,7 +241,7 @@ namespace demo1.UI
                     picBoxList = deal.getPicturesT<nacarsdata28>(label1.Text, label6.Text);
                     break;
                 case 29:
-                    picBoxList = deal.getPicturesT<nacarsdata02>(label1.Text, label6.Text);
+                    picBoxList = deal.getPicturesT<nacarsdata29>(label1.Text, label6.Text);
                     break;
                 case 30:
                     picBoxList = deal.getPicturesT<nacarsdata30>(label1.Text, label6.Text);

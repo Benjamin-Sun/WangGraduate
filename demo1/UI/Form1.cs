@@ -116,7 +116,7 @@ namespace demo1
                     this.dataGridView1.DataSource = deal.getAll<nacarsdata28>();
                     break;
                 case 29:
-                    this.dataGridView1.DataSource = deal.getAll<nacarsdata02>();
+                    this.dataGridView1.DataSource = deal.getAll<nacarsdata29>();
                     break;
                 case 30:
                     this.dataGridView1.DataSource = deal.getAll<nacarsdata30>();
@@ -230,7 +230,7 @@ namespace demo1
                         this.dataGridView1.DataSource = deal.getByNaltAndTime<nacarsdata28>(this.comboBox1.Text, this.comboBox2.Text);
                         break;
                     case 29:
-                        this.dataGridView1.DataSource = deal.getByNaltAndTime<nacarsdata02>(this.comboBox1.Text, this.comboBox2.Text);
+                        this.dataGridView1.DataSource = deal.getByNaltAndTime<nacarsdata29>(this.comboBox1.Text, this.comboBox2.Text);
                         break;
                     case 30:
                         this.dataGridView1.DataSource = deal.getByNaltAndTime<nacarsdata30>(this.comboBox1.Text, this.comboBox2.Text);
