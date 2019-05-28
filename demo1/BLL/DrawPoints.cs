@@ -247,18 +247,20 @@ namespace demo1.BLL
             using (System.Drawing.Graphics g = System.Drawing.Graphics.FromImage(dsImage))
             {
                 Font font = new Font("Arial", 10, FontStyle.Regular);
-                if (!tmp.Equals("") || !tmp.Equals(null))
+                if (tmp.ToString() != "" || tmp.ToString() != null)
                 {
                     if (tmp < 0)
                     {
-                        tmp = Math.Abs((int)tmp);
-                        g.DrawString(tmp.ToString(), font, Brushes.Black, 4, 4);
+                        tmp = tmp - tmp * 2;
+                        g.DrawString(tmp.ToString(), font, Brushes.Black, 3, 3);
                     }
-                    else
+                    else if(tmp > 0)
                     {
-                        g.DrawString("+" + tmp.ToString(), font, Brushes.Black, 4, 4);
+                        g.DrawString("+" + tmp.ToString(), font, Brushes.Black, 3, 3);
                     }
                 }
+                Console.WriteLine(tmp);
+
                 g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bilinear;
                 g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 //计算偏移量
