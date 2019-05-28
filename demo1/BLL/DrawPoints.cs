@@ -166,7 +166,15 @@ namespace demo1.BLL
                 Font font = new Font("Arial", 10, FontStyle.Regular);
                 if (!tmp.Equals("") || !tmp.Equals(null))
                 {
-                    g.DrawString(tmp.ToString(), font, Brushes.Black, 4, 4);
+                    if (tmp < 0)
+                    {
+                        tmp = Math.Abs((Int32)tmp);
+                        g.DrawString(tmp.ToString(), font, Brushes.Black, 4, 4);
+                    }
+                    else
+                    {
+                        g.DrawString("+" + tmp.ToString(), font, Brushes.Black, 4, 4);
+                    }
                 }
                 g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bilinear;
                 g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;

@@ -74,6 +74,7 @@ namespace demo1.DAL
             }
         }
 
+        //根据高度和时间范围查找
         public List<nacarsdata01> selectByNaltAndTime(int min, int max, int t)
         {
             using (var context = new acarsEntities())
