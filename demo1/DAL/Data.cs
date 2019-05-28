@@ -11,7 +11,7 @@ namespace demo1.DAL
     {
         private DateTime date = new DateTime(2019, 4, 1, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
         //private DateTime dateT = new DateTime(2019, 4, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
-        private DateTime dateT = new DateTime(2019, 3, 31, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
+        private DateTime dateT = new DateTime(2019, 4, 2, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
 
 
         //查询所有

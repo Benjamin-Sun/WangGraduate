@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -63,11 +64,26 @@ namespace demo1.BLL
 
             for (int i = 0; i < list.Count; i++)
             {
+                //获取泛型对象中的属性值
+                Type type = typeof(T);
+                PropertyInfo proInfonlong = type.GetProperty("nlong");
+                PropertyInfo proInfonlat = type.GetProperty("nlat");
+
+                double tlong = (double)proInfonlong.GetValue(list[i]);
+                double tlat = (double)proInfonlat.GetValue(list[i]);
+
+                nlong = (int)(tlong - 100) * 40;
+                nlat = (int)(tlat - 20) * 40;
+
+                Console.WriteLine(nlong + " " + nlat);
+
                 //测试使用
                 //Console.WriteLine((int)((list[i].nlong - 70) * 20) + " " + (int)((list[i].nlat - 10) * 20));
+                //Console.WriteLine(list[i].nlong);
+                //Console.WriteLine(list[i].nlat);
 
-                nlong = (int)(list[i].nlong - 100) * 40;
-                nlat = (int)(list[i].nlat - 20) * 40;
+                //nlong = (list[i].nlong - 100) * 40;
+                //nlat = (list[i].nlat - 20) * 40;
                 image.SetPixel(nlong, nlat, Color.Red);
             }
             return image;
@@ -155,15 +171,27 @@ namespace demo1.BLL
             int windSpe;
             int? tmp;
             List<PictureBox> picBoxList = new List<PictureBox>();
-            picBoxList.Add(new PictureBox());
 
             for (int i = 0; i < list.Count; i++)
             {
-                nlong = (int)(list[i].nlong - 100) * 40;
-                nlat = (int)(list[i].nlat - 20) * 40;
-                windDir = (int)list[i].nwinddirection;
-                windSpe = (int)list[i].nwindspeed;
-                tmp = (int?)list[i].ntemperature;
+                Type type = typeof(T);
+                PropertyInfo proInfonlong = type.GetProperty("nlong");
+                PropertyInfo proInfonlat = type.GetProperty("nlat");
+                PropertyInfo proInfonwdr = type.GetProperty("nwinddirection");
+                PropertyInfo proInfonwsp = type.GetProperty("nwindspeed");
+                PropertyInfo proInfontmp = type.GetProperty("ntemperature");
+
+                double tlong = (double)proInfonlong.GetValue(list[i]);
+                double tlat = (double)proInfonlat.GetValue(list[i]);
+                double twdr = (int)proInfonwdr.GetValue(list[i]);
+                double twsp = (double)proInfonwsp.GetValue(list[i]);
+                double? ttmp = (double?)proInfontmp.GetValue(list[i]);
+
+                nlong = (int)(tlong - 100) * 40;
+                nlat = (int)(tlat - 20) * 40;
+                windDir = (int)twdr;
+                windSpe = (int)twsp;
+                tmp = (int?)ttmp;
 
                 Console.WriteLine("nlong:" + nlong + " " + "nlat:" + nlat + " " + "windDir:" + windDir + " " + "windSpe:" + windSpe + " " + "tmp:" + tmp + " ");
 
@@ -223,7 +251,7 @@ namespace demo1.BLL
                 {
                     if (tmp < 0)
                     {
-                        tmp = Math.Abs((Int32)tmp);
+                        tmp = Math.Abs((int)tmp);
                         g.DrawString(tmp.ToString(), font, Brushes.Black, 4, 4);
                     }
                     else
